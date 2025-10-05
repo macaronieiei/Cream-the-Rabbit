@@ -52,15 +52,15 @@
         // Load OBJ + Texture
         const textureLoader = new THREE.TextureLoader();
         const textures = {
-            chaoEye: textureLoader.load('https://macaronieiei.github.io/cream-sonic-racing-crossworlds/T_Chao_eye_L_Bc.png'),
-            cheeseBody: textureLoader.load('https://macaronieiei.github.io/cream-sonic-racing-crossworlds/T_Cheese_body_L_Bc.png'),
-            creamBody: textureLoader.load('https://macaronieiei.github.io/cream-sonic-racing-crossworlds/T_Cream_body_L_Bc.png'),
-            creamEye: textureLoader.load('https://macaronieiei.github.io/cream-sonic-racing-crossworlds/T_Cream_eye_Bc.png')
+            chaoEye: textureLoader.load('https://macaronieiei.github.io/Cream-the-Rabbit/T_Chao_eye_L_Bc.png'),
+            cheeseBody: textureLoader.load('https://macaronieiei.github.io/Cream-the-Rabbit/T_Cheese_body_L_Bc.png'),
+            creamBody: textureLoader.load('https://macaronieiei.github.io/Cream-the-Rabbit/T_Cream_body_L_Bc.png'),
+            creamEye: textureLoader.load('https://macaronieiei.github.io/Cream-the-Rabbit/T_Cream_eye_Bc.png')
         };
 
         const loader = new THREE.OBJLoader();
         loader.load(
-            'https://macaronieiei.github.io/cream-sonic-racing-crossworlds/cream-sonic-racing-crossworlds.obj',
+            'https://macaronieiei.github.io/Cream-the-Rabbit/cream-sonic-racing-crossworlds.obj',
             function (object) {
                 object.traverse(function (child) {
                     if (child.isMesh) {
